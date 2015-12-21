@@ -1364,6 +1364,10 @@ blockquote:before, blockquote:after {
 	padding-top:30px;
 }
 
+.news-item .thumbnail img{
+	max-height:138px; 
+}
+
 .news-item-title{
 	padding:10px 0 10px 0;
 }
