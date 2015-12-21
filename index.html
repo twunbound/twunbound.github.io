@@ -7,7 +7,6 @@
 <link rel="stylesheet" media="all" href="./css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- JS -->
-<script id="facebook-jssdk" src="./年輕力量進國會_files/sdk.js"></script><script src="./js/jquery-1.6.4.min.js"></script>
 <script src="./js/css3-mediaqueries.js"></script>
 <script src="./js/custom.js"></script>
 <script src="./js/tabs.js"></script>
@@ -62,15 +61,6 @@
 <iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="Facebook Cross Domain Communication Frame" aria-hidden="true" tabindex="-1" id="fb_xdm_frame_http" src="./年輕力量進國會_files/xd_arbiter.html" style="border: none;"></iframe>
 
 </div></div></div>
-
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!--end-->
 
 
 <!-- mobile-nav -->
@@ -163,8 +153,18 @@
     </div>-->
     <!-- ENDS masthead -->
     <!-- portfolio list -->
-    <div class="header" ><a name="users" id="#candidate"></a><h2>我們所"看見"的候選人</h2>
+    <div class="header" >
+
+      <a name="users" id="#candidate"></a>
+      <div class="pull-right">
+        <div class="fb-like" data-href="http://twunbound.github.io/" data-layout="button_count" data-action="like" 
+        data-show-faces="true" data-share="true"></div>
+      </div>
+
+      <h2>我們所"看見"的候選人</h2>
       <h3>一步一腳印的為您呈現，鏡頭外的候選人。</h3>
+  
+
     </div>
     
     <hr />
@@ -282,6 +282,13 @@
   </div>
   <div id="to-top"></div>
 </footer>-->
-
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
 </body></html>
