@@ -1379,3 +1379,12 @@ blockquote:before, blockquote:after {
 .news-item-abstract{
 	font-size:16px;
 }
+
+.greensdparty .label-success{
+	background:rgb(226,0,105);
+}
+
+.newpowerparty .label-success{
+	background:rgb(250,180,0);
+	color:black;
+}
