@@ -1416,12 +1416,25 @@ blockquote:before, blockquote:after {
 }
 
 .news-content .news-photo-1{
-	float:right;max-width:200px;padding-left:20px;padding-bottom:20px;
+	float:right;max-width:400px;padding-left:20px;padding-bottom:20px;
 }
+
+.news-content h4{
+	font-weight:bold;
+}
+
+@media (max-width: 800px) {
+
+	.news-content .news-photo-1{
+		max-width:300px;
+	}
+}
+
 
 @media (max-width: 500px) {
 
 	.news-content .news-photo-1{
 		float:none;
+		max-width:100%;
 	}
 }
