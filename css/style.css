@@ -1438,6 +1438,10 @@ blockquote:before, blockquote:after {
 	color:rgb(190,0,100);
 }
 
+.news-content .start{
+	margin-top:20px;
+}
+
 .news-content .news-photo-1{
 	float:right;max-width:400px;padding-left:20px;padding-bottom:20px;
 }
@@ -1451,6 +1455,16 @@ blockquote:before, blockquote:after {
 .article-footer{
 	font-size:18px;
 	border-top:1px dashed black;
+}
+
+blockquote{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin: 24px 0;
+  border-left: 3px solid #cccccc;
+  padding-left: 21px;
+  color: #8a8a8a;
 }
 
 @media (max-width: 800px) {
