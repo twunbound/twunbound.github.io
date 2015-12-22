@@ -1441,6 +1441,7 @@ blockquote:before, blockquote:after {
 
 .news-content h4{
 	font-weight:bold;
+	margin-bottom: 1.5em;
 }
 
 @media (max-width: 800px) {
