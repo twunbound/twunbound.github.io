@@ -1400,20 +1400,40 @@ blockquote:before, blockquote:after {
 	padding-top:30px;
 }
 
+.news-content .news-subtitle{
+	font-size:30px;
+}
+
 .news-content{
-	font-size:16px;
+	font-size:20px;
+	line-height:180%;
+}
+
+.news-content p{
+	margin:10px 0 10px 0;
 }
 .news-content .news-subtitle{
 	margin-bottom:20px;
+}
+
+.article-title{
+	font-size:36px;
+}
+
+.article-author{
+	font-size:22px;
+	margin:20px 0 0px 0;
+}
+
+.article-time{
+	font-size:18px;
+	margin:6px 0 4px 0;
 }
 
 .article-title,.article-author,.article-time{
 	margin-bottom:5px;
 }
 
-.article-author,.article-time{
-	font-size:16px;
-}
 
 .news-content .news-photo-1{
 	float:right;max-width:400px;padding-left:20px;padding-bottom:20px;
