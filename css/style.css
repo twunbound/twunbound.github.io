@@ -1471,7 +1471,9 @@ blockquote{
 }
 
 @media (max-width: 800px) {
-
+	#main #content{
+		width:auto;
+	}
 	.news-content .news-photo-1{
 		max-width:300px;
 	}
