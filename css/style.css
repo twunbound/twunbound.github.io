@@ -463,7 +463,7 @@ nav a{
 }
 
 .shadow-main{
-	width: 852px;
+	width: 100%;
 	height: 11px;
 	margin-left: 68px;
 	background: url(../images/shadow-main.png) no-repeat top center;
