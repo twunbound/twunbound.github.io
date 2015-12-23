@@ -1412,9 +1412,8 @@ blockquote:before, blockquote:after {
 .news-content p{
 	margin:0.5em 0;
 	line-height: 1.7;
-	text-indent: 2em;
-	
 }
+
 .news-content .news-subtitle{
 	margin-bottom:20px;
 }
