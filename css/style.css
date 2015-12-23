@@ -1467,6 +1467,7 @@ blockquote{
   border-left: 3px solid #cccccc;
   padding-left: 21px;
   color: #8a8a8a;
+  font-size:20px;
 }
 
 @media (max-width: 800px) {
