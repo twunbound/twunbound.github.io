@@ -29,7 +29,8 @@
     "prev": {
       "title": "呂欣潔：柔和的勇猛",
       "id": "JenniferLuTw"
-    }
+    },
+    "wait":false
   },
   {
     "wait": false,
@@ -63,15 +64,8 @@
   {
     "wait": true,
     "index": 11,
-    "name": "范雲",
+    "name": "吳紹文",
     "party": "greensdparty",
-    "tags":"台北市,大安區"
-  },
-  {
-    "wait": true,
-    "index": 12,
-    "party": "newpowerparty",
-    "name": "鄭秀玲",
-    "tags":"不分區"
+    "tags":"宜蘭縣"
   }
 ]

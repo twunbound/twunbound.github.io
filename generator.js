@@ -15,6 +15,7 @@ var items = JSON.parse(fs.readFileSync("data.json"));
 // renderFile 
 var last = null;
 
+var lists = [];
 items.forEach(function(item,ind){
   item.truncate = truncate;
   item.tag_ary = item.tags.split(",");
@@ -76,11 +77,17 @@ items.forEach(function(item,ind){
     };
   }
 
-
   if(item.id){
     var html = jade.renderFile('temp/user.jade', item);
     fs.writeFileSync("view/"+item.id+".html", html);
   }
+
+  lists.push(item);
+
   last = item;
 });
+
+var html = jade.renderFile('temp/index.jade', {items:lists});
+fs.writeFileSync("index.html", html);
+
 
