@@ -87,10 +87,13 @@
         "index": 3
       }
     ],
-    "next":{
-      "title":"",
-      "wait":true
-    },
     "ogimg": 0
+  },
+  {
+    "wait":true,
+    "index": 12,
+    "name":"洪慈庸",
+    "party":"newpowerparty",
+    "tags":"臺中市第三選舉區,后里區,神岡區,大雅區,潭子區"
   }
 ]
