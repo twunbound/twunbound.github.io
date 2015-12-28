@@ -90,4 +90,7 @@ items.forEach(function(item,ind){
 var html = jade.renderFile('temp/index.jade', {items:lists});
 fs.writeFileSync("index.html", html);
 
+var html = jade.renderFile('temp/sitemap.jade', {items:lists});
+fs.writeFileSync("sitemap.xml", html);
+
 
