@@ -57,10 +57,20 @@
         "index": 1
       }
     ],
-    "ogimg": 0,
-    "next": {
-      "title": "鄭秀玲",
-      "wait": true
-    }
+    "ogimg": 0
+  },
+  {
+    "wait": true,
+    "index": 11,
+    "name": "范雲",
+    "party": "greensdparty",
+    "tags":"台北市,大安區"
+  },
+  {
+    "wait": true,
+    "index": 12,
+    "party": "newpowerparty",
+    "name": "鄭秀玲",
+    "tags":"不分區"
   }
 ]
