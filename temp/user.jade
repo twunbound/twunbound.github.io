@@ -1,0 +1,154 @@
+doctype html
+html(lang='zh_TW')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title=title
+    meta(charset='utf-8')
+    //if lt IE 9
+      script(src='js/html5.js')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // JS
+    meta(name='description', content=truncate(part1,100))
+    meta(property='og:image', content='http://twunbound.github.io/images/008-01.jpg')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
+    // Optional theme
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
+    // ENDS Flex Slider
+    //if IE 6
+      link(rel='stylesheet', href='css/ie6-hacks.css', media='screen')
+      script(src='js/DD_belatedPNG.js')
+      script.
+        /* EXAMPLE */ DD_belatedPNG.fix('*');
+    // Lessgrid
+    link(rel='stylesheet', media='all', href='/css/lessgrid.css')
+    link(rel='stylesheet', media='all', href='/css/style.css')
+  body
+    // mobile-nav
+    #mobile-nav-holder
+      .wrapper
+        #nav-open
+          a(href='/') 首頁
+    // ENDS mobile-nav
+    header.header-2
+      .wrapper
+        a#logo(href='/')
+          img(src='/images/logo.png', alt='')
+        nav
+          ul#nav
+            li
+              a(href='/') 首頁
+            li
+              a(href='/#candidate') 我們所"看見"的候選人
+        .clearfix
+    // MAIN
+    #main
+      // social
+      #content
+        .header
+          a(name='users', id='#candidate')
+          .pull-right
+            .fb-like(data-href=url, data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
+          h2.article-title=title
+          p.article-author
+            | 作者：
+            a(target='_blank', href='https://www.facebook.com/rexhow.dna/') 郝明義
+            | 、
+            |           陳季芳
+          p.article-time=time
+          p(class="party")  
+            each val in tag_ary
+              span.label.label-success=val
+        hr
+        .news-content
+          img.news-photo-1(style='margin-top:20px;', src='/images/'+sn+'-0'+photo[0].index+'.jpg', alt=name)
+          blockquote=subtitle
+          h4.start  郝明義看到的這個人
+          
+          each line in part1_ary
+            if line.img
+              img.news-photo-1(style='margin-top:20px;', src='/images/00'+index+'-0'+line.img.index+'.jpg', alt=name)
+            else
+              p=line
+              p=""
+
+          hr(style='border:1px dashed black;margin-bottom:30px;margin-top:30px;')
+          h4="聽聽"+name+"說的話"
+          
+          each line in part2_ary
+            if line.img
+              img.news-photo-1(src='/images/00'+index+'-0'+photo[line.index-1].index+'.jpg', alt=name)
+            else
+              p=line
+              p=""
+
+          hr(style='border:1px dashed black;margin-bottom:30px;margin-top:30px;')
+          h4 陳季芳的側記 
+          
+          each line in part3_ary
+            if line.img
+              img.news-photo-1(style='margin-top:20px;', src='/images/00'+index+'-0'+photo[line.img.index-1]+'.jpg', alt=name)
+              p=line.img.index-1
+              p=photo[line.img.index-1]
+            else
+              p=line
+              p=""
+
+
+        div(style='padding:24px;')
+          .fb-page(data-href=fanspage, data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+            .fb-xfbml-parse-ignore
+              blockquote(cite=fanspage)
+                a(href=fanspage)=fanstitle
+
+        .article-footer(style='padding:24px;')
+          a(target='_blank', href=donate_link)="捐款支持"+name
+          br
+          br
+          br
+          a(href='/view/'+prev.id)="上一篇："+prev.title
+          br
+          br
+          if next.wait
+            span="下一篇："+next.title+"（敬請期待）"
+          else
+            a(href='/view/'+next.id)="下一篇："+next.title
+          br
+          br
+          a(href='/') 看所有採訪文章列表
+        hr(style='border:1px dashed black;margin-bottom:30px;margin-top:30px;')
+        div(style='padding:24px')
+          h4 網友迴響
+          .fb-comments(data-width='100%', data-href=url, data-numposts='6')
+      // ENDS content
+      .clearfix
+      .shadow-main
+    // ENDS MAIN
+    footer(style='clear:both;')
+      .wrapper
+        section#copyright
+          p 本站內容採用 CC BY-NC-SA 3.0 授權分享。
+          p 採訪：郝明義、陳季芳；LOGO 設計：Akibo
+          p
+            | 網站設計：知名不具；
+            a(href='https://github.com/twunbound/twunbound.github.io') Fork me on github.
+        .clearfix
+      #to-top
+    #fb-root
+    script(src='//code.jquery.com/jquery-1.11.3.min.js')
+    // Latest compiled and minified JavaScript
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js', integrity='sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS', crossorigin='anonymous')
+    script.
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-67262972-3', 'auto');
+      ga('send', 'pageview');
