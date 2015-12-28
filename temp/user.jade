@@ -9,7 +9,7 @@ html(lang='zh_TW')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     // JS
     meta(name='description', content=truncate(part1,100))
-    meta(property='og:image', content='http://twunbound.github.io/images/008-01.jpg')
+    meta(property='og:image', content='http://twunbound.github.io'+'/images/'+sn+'-0'+photo[ogimg].index+'.jpg')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity='sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossorigin='anonymous')
     // Optional theme
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity='sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossorigin='anonymous')
@@ -66,7 +66,7 @@ html(lang='zh_TW')
           
           each line in part1_ary
             if line.img
-              img.news-photo-1(style='margin-top:20px;', src='/images/00'+index+'-0'+line.img.index+'.jpg', alt=name)
+              img.news-photo-1(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
             else
               p=line
               p=""
@@ -76,7 +76,7 @@ html(lang='zh_TW')
           
           each line in part2_ary
             if line.img
-              img.news-photo-1(src='/images/00'+index+'-0'+photo[line.index-1].index+'.jpg', alt=name)
+              img.news-photo-1(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
             else
               p=line
               p=""
@@ -86,9 +86,7 @@ html(lang='zh_TW')
           
           each line in part3_ary
             if line.img
-              img.news-photo-1(style='margin-top:20px;', src='/images/00'+index+'-0'+photo[line.img.index-1]+'.jpg', alt=name)
-              p=line.img.index-1
-              p=photo[line.img.index-1]
+              img.news-photo-1(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
             else
               p=line
               p=""
