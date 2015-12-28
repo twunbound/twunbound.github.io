@@ -117,10 +117,11 @@ html(lang='zh_TW')
           a(href='/view/'+prev.id)="上一篇："+prev.title
           br
           br
-          if next.wait
-            span="下一篇："+next.title+"（敬請期待）"
-          else
-            a(href='/view/'+next.id)="下一篇："+next.title
+          if next
+            if next.wait
+              span="下一篇："+next.title+"（敬請期待）"
+            else
+              a(href='/view/'+next.id)="下一篇："+next.title
           br
           br
           a(href='/') 看所有採訪文章列表
