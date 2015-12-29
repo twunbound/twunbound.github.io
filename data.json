@@ -90,7 +90,7 @@
     "ogimg": 2
   },
   {
-    "wait":true,
+    "wait":false,
     "index": 12,
     "name":"洪慈庸",
     "party":"newpowerparty",
