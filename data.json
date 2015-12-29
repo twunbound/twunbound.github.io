@@ -148,11 +148,25 @@
   },
   {
     "wait":true,
+    "name":"李晏榕",
+    "party":"greensdparty",
+    "tags":"台北市,中山區,北松山區",
+    "index":14
+  },
+  {
+    "wait":true,
+    "name":"李根政",
+    "party":"greensdparty",
+    "tags":"不分區",
+    "index":15
+  },
+  {
+    "wait":true,
     "ignore":true,
     "name":"黃國昌",
     "party":"newpowerparty",
     "tags":"新北市第12選區,金山區,萬里區,汐止區,平溪區,瑞芳區,雙溪區,貢寮區",
-    "index":14,
+    "index":16,
     "id":"kcfor2016",
     "title":"黃國昌：策略與實戰",
     "subtitle": "讓我們在立法院裡多堅持一點，讓理想和現實之間的平衡點，總是能往理想的方向多移動幾吋，就可以使台灣更進步一些。",
@@ -181,7 +195,7 @@
     "name":"邱顯智",
     "party":"newpowerparty",
     "tags":"新竹市",
-    "index":15,
+    "index":17,
     "id":"LawyerHandyChiu",
     "title":"邱顯智：為弱勢者燃燒",
     "subtitle": "我選擇幫助弱勢者的戰場。我看過太多社會底層的弱勢者，他們的困境、心聲、訴求完全無法在現行的代議制度中被反映，被重視。",
