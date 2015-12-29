@@ -75,7 +75,7 @@ html(lang='zh_TW')
             if line.img
               img.news-photo-1(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
             else
-              p=line
+              p!=line
               p=""
 
           hr(style='border:1px dashed black;margin-bottom:30px;margin-top:30px;')
@@ -88,7 +88,7 @@ html(lang='zh_TW')
                 if photo[line.index-1].desc
                   p(style="background:#dddddd;margin-top:0;padding-left:10px;")=photo[line.index-1].desc
             else
-              p=line
+              p!=line
               p=""
 
           hr(style='border:1px dashed black;margin-bottom:30px;margin-top:30px;')
@@ -99,7 +99,7 @@ html(lang='zh_TW')
               p.news-photo-1
                 img(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
             else
-              p=line
+              p!=line
               p=""
 
 
@@ -110,7 +110,7 @@ html(lang='zh_TW')
                 a(href=fanspage)=fanstitle
 
         .article-footer(style='padding:24px;')
-          a(target='_blank', href=donate_link)="捐款支持"+name
+          a(target='_blank', href=donate_link)="捐款支持"+ donate_name
           br
           br
           br

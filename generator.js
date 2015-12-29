@@ -31,6 +31,7 @@ items.forEach(function(item,ind){
       item.fanstitle = item.name;
     }
 
+    item.donate_name = item.donate_name || item.name;
 
     item.part1_ary = item.part1.split("\n");
     item.part1_ary = item.part1_ary.map(function(item){
@@ -63,7 +64,7 @@ items.forEach(function(item,ind){
   }
 
   if(item.next == null ){
-    if(items[ind+1] != null){
+    if(items[ind+1] != null && ! item.ignore ){
       item.next = {
         title:items[ind+1].wait ? items[ind+1].name:items[ind+1].title,
         id:items[ind+1].id,
@@ -87,10 +88,23 @@ items.forEach(function(item,ind){
   last = item;
 });
 
-var html = jade.renderFile('temp/index.jade', {items:lists});
+var html = jade.renderFile('temp/index.jade', {items:lists.filter(function(i){
+  return i.ignore == null || !i.ignore;
+})});
 fs.writeFileSync("index.html", html);
+
+
+var html = jade.renderFile('temp/index.jade', {items:lists.map(function(i){
+  i.wait = false;
+  return i;
+})});
+fs.writeFileSync("index_full.html", html);
+
 
 var html = jade.renderFile('temp/sitemap.jade', {items:lists});
 fs.writeFileSync("sitemap.xml", html);
 
+/*
+
+  */
 
