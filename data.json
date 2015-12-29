@@ -145,7 +145,7 @@
         "index": 3
       }
     ],
-    "ogimg": 2
+    "ogimg": 0
   },
   {
     "wait":true,
@@ -174,7 +174,7 @@
         "index": 3
       }
     ],
-    "ogimg": 2
+    "ogimg": 0
   },
   {
     "wait":true,
@@ -203,6 +203,6 @@
         "index": 3
       }
     ],
-    "ogimg": 2
+    "ogimg": 0
   }
 ]
