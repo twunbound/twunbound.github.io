@@ -265,11 +265,17 @@
   },
   {
     "wait":true,
-    "ignore":true,
+    "name":"范雲",
+    "party":"greensdparty",
+    "tags":"台北市,大安區",
+    "index":18
+  },
+  {
+    "wait":true,
     "name":"邱顯智",
     "party":"newpowerparty",
     "tags":"新竹市",
-    "index":18,
+    "index":19,
     "id":"LawyerHandyChiu",
     "title":"邱顯智：為弱勢者燃燒",
     "subtitle": "我選擇幫助弱勢者的戰場。我看過太多社會底層的弱勢者，他們的困境、心聲、訴求完全無法在現行的代議制度中被反映，被重視。",
