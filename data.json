@@ -176,7 +176,7 @@
     
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"李根政",
     "party":"greensdparty",
     "tags":"不分區",
@@ -206,7 +206,7 @@
     
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"黃國昌",
     "party":"newpowerparty",
     "tags":"新北市第12選區,金山區,萬里區,汐止區,平溪區,瑞芳區,雙溪區,貢寮區",
