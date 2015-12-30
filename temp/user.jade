@@ -73,7 +73,9 @@ html(lang='zh_TW')
           
           each line in part1_ary
             if line.img
-              img.news-photo-1(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
+              img(style="width:100%;",src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
+              if photo[line.index-1].desc
+                p(style="background:#dddddd;margin-top:0;padding-left:10px;")=photo[line.index-1].desc
             else
               p!=line
               p=""
@@ -97,7 +99,9 @@ html(lang='zh_TW')
           each line in part3_ary
             if line.img
               p.news-photo-1
-                img(src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
+                img(style="width:100%;",src='/images/'+sn+'-0'+photo[line.index-1].index+'.jpg', alt=name)
+              if photo[line.index-1].desc
+                p(style="background:#dddddd;margin-top:0;padding-left:10px;")=photo[line.index-1].desc
             else
               p!=line
               p=""
