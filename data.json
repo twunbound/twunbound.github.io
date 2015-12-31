@@ -235,7 +235,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"楊智達",
     "party":"greensdparty",
     "tags":"台南市,第四選區,安平區,南區,東區",
