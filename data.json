@@ -264,7 +264,7 @@
 
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"范雲",
     "party":"greensdparty",
     "tags":"台北市,大安區",
@@ -292,7 +292,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "ignore":true,
     "name":"邱顯智",
     "party":"newpowerparty",
