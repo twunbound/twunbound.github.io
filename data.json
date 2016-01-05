@@ -463,7 +463,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"徐永明",
     "party":"newpowerparty",
     "tags":"不分區",
@@ -492,7 +492,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"高潞・以用",
     "party":"newpowerparty",
     "tags":"不分區",
@@ -521,7 +521,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"賈伯楷",
     "party":"greensdparty",
     "tags":"新北市,第四選區,新莊區",
