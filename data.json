@@ -434,7 +434,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"張麗芬",
     "party":"greensdparty",
     "tags":"不分區",
