@@ -243,13 +243,14 @@ html(lang='zh_TW')
                   span=" "
                   span.label.label-success=val
 
-
-        .row.news-item
-          .col-xs-12.col-sm-4.col-md-3
-            a.thumbnail(href='#')
-              img(src='/images/anonymous.jpg', alt='')
-          .col-xs-12.col-sm-8.col-md-9
-            h3.news-item-title="待推出 (...... 還有 " + (27-7 - items.length)  + " 人)"
+        
+        if (27-7 - items.length) > 0
+          .row.news-item
+            .col-xs-12.col-sm-4.col-md-3
+              a.thumbnail(href='#')
+                img(src='/images/anonymous.jpg', alt='')
+            .col-xs-12.col-sm-8.col-md-9
+              h3.news-item-title="待推出 (...... 還有 " + (27-7 - items.length)  + " 人)"
       // ENDS content
       .clearfix
       .shadow-main

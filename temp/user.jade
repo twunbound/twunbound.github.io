@@ -108,10 +108,14 @@ html(lang='zh_TW')
 
 
         div(style='padding:24px;')
-          .fb-page(data-href=fanspage, data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
-            .fb-xfbml-parse-ignore
-              blockquote(cite=fanspage)
-                a(href=fanspage)=fanstitle
+          if fanspage
+            .fb-page(data-href=fanspage, data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+              .fb-xfbml-parse-ignore
+                blockquote(cite=fanspage)
+                  a(href=fanspage)=fanstitle
+
+          if fbprofile
+            a(target='_blank',href=fbprofile,style='font-size:26px;')=name
 
         .article-footer(style='padding:24px;')
           a(target='_blank', href=donate_link)="捐款支持"+ donate_name
