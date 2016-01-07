@@ -549,7 +549,7 @@
     "ogimg": 0
   },
   {
-    "wait":true,
+    "wait":false,
     "name":"林依瑩",
     "party":"newpowerparty",
     "tags":"不分區",
